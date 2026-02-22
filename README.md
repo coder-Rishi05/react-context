@@ -65,6 +65,7 @@ const ThemeProvider = () => {
 ```
 
 ---
+
 ```jsx
 ThemeContext.jsx;
 import { Children, createContext } from "react";
@@ -103,7 +104,6 @@ const App = () => {
 export default App;
 ```
 
-
 using
 
 ```js
@@ -115,3 +115,8 @@ console.log(themes);
 
 ### implementing dark mode
 
+- create a context
+- create a provider
+- wrap all the components with provider
+- then inside provider wrap childrens with context and value
+- then useContext(context) to use the context

@@ -5,7 +5,8 @@ import { ThemeProvider } from "./context/ThemeContext";
 const App = () => {
 
   return (
-    <ThemeProvider   >
+// wrap the all the components with provider
+<ThemeProvider   >
       
         <Card />
      
