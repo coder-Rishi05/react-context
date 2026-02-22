@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ThemeContext, ThemeProvider } from "../context/ThemeContext";
 
 const Card = () => {
   const [yes, setYes] = useState(false);
@@ -9,6 +10,8 @@ const Card = () => {
     setYes((e) => !e);
   };
 
+  const themes = useContext(ThemeContext);
+  console.log(themes);
   const handleNo = () => {
     function getRandom() {
       const number = Math.random() * 200;
