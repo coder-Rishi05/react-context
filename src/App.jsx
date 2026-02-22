@@ -6,9 +6,9 @@ const App = () => {
 
   return (
     <ThemeProvider   >
-      <div className="w-full flex item-center justify-center bg-pink-200 h-screen">
+      
         <Card />
-      </div>
+     
     </ThemeProvider>
   );
 };
