@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const UserProfile = () => {
   const [photo, setPhoto] = useState(null);
   const [data, setData] = useState([]);
 
-  const api = async () => {
-    const data = await fetch("https://api.github.com/users");
-    const jsonData = await data.json();
-    setData(jsonData);
-    console.log("hello");
-    // setPhoto(jsonData[0].avatar_url);
-  };
-//   api()
+  useEffect(() => {
+    const api = async () => {
+      const data = await fetch("https://api.github.com/users");
+      const jsonData = await data.json();
+      setData(jsonData);
+      console.log("hello");
+      // setPhoto(jsonData[0].avatar_url);
+    };
+    api();
+  }, []);
 
   return (
     <div className="w-full h-full py-4 bg-zinc-900 flex  items-center justify-center flex-col gap-10">
