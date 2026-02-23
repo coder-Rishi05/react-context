@@ -120,3 +120,9 @@ console.log(themes);
 - wrap all the components with provider
 - then inside provider wrap childrens with context and value
 - then useContext(context) to use the context
+
+--- 
+# useEffect
+
+- 
+
