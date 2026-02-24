@@ -156,3 +156,4 @@ export default HookForm;
 
 here we are handling error right there which looks ugly and can increase the complexity so to fix it we use zod.
 
+- zod : it is used to validate the data schema.
