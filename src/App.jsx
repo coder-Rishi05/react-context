@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import { ThemeProvider } from "./context/ThemeContext";
 import UserProfile from "./components/UserProfile";
 import HookForm from "./form/HookForm";
+import Counter from "./ref/Counter";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
     <ThemeProvider>
       {/* <Clock /> */}
       {/* <Form /> */}
-      <HookForm />
+      {/* <HookForm /> */}
+      <Counter />
       {/* <Card /> */}
       {/* <UserProfile /> */}
     </ThemeProvider>
