@@ -209,6 +209,8 @@ useEffect(() => {}, []);
 
 ### need of dependency array
 
+- now ab jitni bar number ki value change hogi utni hi baar useEffect call hoga. again and again.
+
 ```js
 import React, { useEffect, useState } from "react";
 
@@ -270,3 +272,27 @@ const UserProfile = () => {
 
 export default UserProfile;
 ```
+
+```js
+import React, { useState } from "react";
+
+const Clock = () => {
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+//   setInterval(() => {
+//     setTime(new Date().toLocaleTimeString());
+//     console.log("hi")
+//   }, 1000);
+
+  return (
+    <div>
+      <h1>Current Time : {time}</h1>
+    </div>
+  );
+};
+
+export default Clock;
+
+```
+
+here in this code the time will keep getting render each time the time move forward
