@@ -4,7 +4,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import UserProfile from "./components/UserProfile";
 import HookForm from "./form/HookForm";
 import Counter from "./ref/Counter";
-import Main from "./components/lifting/Main";
+import Main from "./components/cart/Main";
 
 const App = () => {
   return (

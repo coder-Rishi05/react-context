@@ -66,3 +66,13 @@ export default Layout
 
 
 ```
+
+### useContext
+
+this have 2 things creater and producer.
+
+- craeting context
+
+```js
+const Counter
+```
