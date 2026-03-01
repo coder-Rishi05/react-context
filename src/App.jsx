@@ -5,12 +5,14 @@ import UserProfile from "./components/UserProfile";
 import HookForm from "./form/HookForm";
 import Counter from "./ref/Counter";
 import Main from "./components/cart/Main";
+import Data from "./components/refhook/Data";
 
 const App = () => {
   return (
     // wrap the all the components with provider
     <ThemeProvider>
-      <Main />
+      {/* <Main /> */}
+      <Data />
       {/* <Clock /> */}
       {/* <Form /> */}
       {/* <HookForm /> */}
